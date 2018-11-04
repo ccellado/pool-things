@@ -6,7 +6,7 @@
 #    By: ccellado <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/29 17:32:18 by ccellado          #+#    #+#              #
-#    Updated: 2018/10/29 18:29:07 by ccellado         ###   ########.fr        #
+#    Updated: 2018/10/29 21:32:06 by ccellado         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ HEADERS_FOLDER=includes
 
 all: make_lib
 		
-makei_lib:
+make_lib:
 	gcc -I$(HEADERS_FOLDER) -c $(SRCS)
 	ar -rv $(NAME) $(OBJECTS)
 	ranlib $(NAME)
