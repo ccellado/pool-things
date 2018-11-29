@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/26 13:23:07 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 13:25:28 by ccellado         ###   ########.fr       */
+/*   Created: 2018/11/21 17:14:19 by ccellado          #+#    #+#             */
+/*   Updated: 2018/11/26 02:56:34 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
-void	ft_putstr(char const *str)
+char	*ft_strrchr(char *s, int c)
 {
-	if (str)
-		while (*str)
-			ft_putchar(*str++);
-} 
+	char		*str;
+	int		len;
+
+	str = s;
+	len = ft_strlen(str);
+	len += 1;
+	while (len--)
+	{
+		if (str[len] == (char)c)
+			return (&str[len]);
+	}
+	return (NULL);
+}

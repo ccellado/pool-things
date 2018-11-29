@@ -6,12 +6,20 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 19:05:34 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/24 19:23:59 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/11/26 13:45:51 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+#include <stdlib.h>
+typedef	struct	s_list
+{
+	void		*content;
+	size_t		content_size;
+	struct s_list	*next;
+}		t_list;
 
 # include <string.h>
 
@@ -47,5 +55,36 @@ int				ft_isprint(int c);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 
+void			*ft_memalloc(size_t	size);
+void			ft_memdel(void **ap);
+char			*ft_strnew(size_t size);
+void			ft_strdel(char **as);
+void			ft_strclr(char *s);
+void			ft_striter(char *s, void (*f)(char *));
+void			ft_striteri(char *s, void (*f)(unsigned int, char *));
+char			*ft_strmap(char const *s, char (*f)(char));
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int				ft_strequ(char const *s1, char const *s2);
+int				ft_strnequ(char const *s1, char const *s2, size_t n);
+char			*ft_strsub(char const *s, unsigned int start, size_t len);
+char			*ft_strjoin(char const *s1, char const *s2);
+char			*ft_strtrim(char const *s);
+char			*ft_itoa(int nbr);
+char			**ft_strsplit(char const *s, char c);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putchar(char c);
+void			ft_putstr(char *str);
+void			ft_putstr_fd(char *str, int fd);
+void			ft_putnbr(int nb);
+void			ft_putnbr_fd(int nb, int fd);
+void			ft_putendl(char const *str);
+void			ft_putendl_fd(char const *str, int fd);
+
+t_list			*ft_lstnew(void const *content, size_t content_size);
+void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void			ft_lstadd(t_list **start, t_list *link);
+void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 #endif
