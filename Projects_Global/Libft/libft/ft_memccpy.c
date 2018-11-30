@@ -23,12 +23,13 @@ void	*ft_memccpy(void *str1, void *str2, int c, size_t n)
 	nb = n;
 	dest = (unsigned char *)str1;
 	src = (unsigned char *)str2;
-	while (i < nb)
-	{
-		dest[i] = src[i];
-		if (src[i] == (unsigned char)c)
-			return ((unsigned char *)str1 + i + 1);
-		i++;
-	}
+	if (str1 && str2)
+		while (i < nb)
+		{
+			dest[i] = src[i];
+			if (src[i] == (unsigned char)c)
+				return ((unsigned char *)str1 + i + 1);
+			i++;
+		}
 	return (NULL);
 }

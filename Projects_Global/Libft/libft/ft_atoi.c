@@ -14,8 +14,8 @@
 
 int	ft_atoi(char *str)
 {
-	int	result;
-	int sign;
+	int		result;
+	int		sign;
 
 	result = 0;
 	while ((*str >= '\t' && *str <= '\r') || *str == ' ')
@@ -25,5 +25,5 @@ int	ft_atoi(char *str)
 		str++;
 	while (*str >= '0' && *str <= '9')
 		result = result * 10 + *str++ - '0'; 
-	return (result * sign);
+	return ((int)result * sign);
 }

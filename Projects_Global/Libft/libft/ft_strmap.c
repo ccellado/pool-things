@@ -19,13 +19,14 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*arr;
 
 	if (!s)
-		return (NULL);
+		if (!f)
+			return (NULL);
 	j = ft_strlen((char *)s);
 	arr = ft_strnew(j);
 	if (arr == NULL)
 		return (NULL);
 	j = 0;
 	while (*s)
-			arr[j++] = f(*s++);
+		arr[j++] = f(*s++);
 	return (arr);
 }

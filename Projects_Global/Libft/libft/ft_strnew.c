@@ -17,7 +17,7 @@ char	*ft_strnew(size_t size)
 	char	*all;
 	char	*tall;
 
-	all = (char *)malloc(sizeof(char) * size + 1);
+	all = (char *)malloc(sizeof(char) * (unsigned long)size + 1);
 	if (all == NULL)
 		return (NULL);
 	tall = all;

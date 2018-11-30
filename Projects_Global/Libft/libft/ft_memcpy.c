@@ -19,7 +19,8 @@ void	*ft_memcpy(void *str1, void *str2, size_t n)
 
 	buff1 = str1;
 	buff2 = str2;
-	while (n--)
-		*buff1++ = *buff2++;
+	if (str1 && str2)
+		while (n--)
+			*buff1++ = *buff2++;
 	return (str1);
 }

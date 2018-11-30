@@ -21,7 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	i = 0;
 	if (!s)
-		return (NULL);
+		if (!f)
+			return (NULL);
 	j = ft_strlen((char *)s);
 	arr = ft_strnew(j);
 	if (arr == NULL)

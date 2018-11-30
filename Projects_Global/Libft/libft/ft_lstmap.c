@@ -7,7 +7,8 @@ t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	t_list		*list;
 
 	if (!lst)
-		return (NULL);
+		if (!f)
+			return (NULL);
 	list = f(lst);
 	new = list;
 	while (lst->next)

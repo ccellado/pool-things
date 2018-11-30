@@ -70,7 +70,7 @@ char		**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	char	**arr;
-    char	*iter;
+    	char	*iter;
 	char	**dest;
 
 	if (!s)
