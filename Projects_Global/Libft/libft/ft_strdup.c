@@ -6,14 +6,14 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 17:55:42 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 02:35:02 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 07:29:21 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	char	*buff;
 	int		i;

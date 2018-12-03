@@ -6,7 +6,7 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 08:14:24 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 08:25:33 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 08:40:20 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	size_t		i;
-	char	*sub;
+	char		*sub;
 
 	if (!s)
 		return (NULL);
@@ -31,4 +31,4 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		i++;
 	}
 	return (sub);
-}	
+}

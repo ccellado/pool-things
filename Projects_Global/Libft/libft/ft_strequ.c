@@ -6,15 +6,15 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 07:54:33 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 08:04:20 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 08:37:14 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strequ(char const *s1, char const *s2)
+int	ft_strequ(char const *s1, char const *s2)
 {
-	if (s1 && s2)	
+	if (s1 && s2)
 		while (*s1 || *s2)
 			if (*s1++ != *s2++)
 				return (0);

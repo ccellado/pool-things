@@ -6,14 +6,15 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 05:58:16 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 06:00:02 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 08:20:06 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	ft_striter(char *s, void (*f)(char *))
 {
-	if (s)
+	if (s && f)
 		while (*s)
-			if (f)
-				f(s++);
+			f(s++);
 }

@@ -6,7 +6,7 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 13:23:07 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 13:25:28 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 08:36:17 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,4 @@ void	ft_putstr(char *str)
 	if (str)
 		while (*str)
 			ft_putchar(*str++);
-} 
+}

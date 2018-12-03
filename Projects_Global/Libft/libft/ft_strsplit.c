@@ -6,15 +6,13 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 10:34:08 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 11:07:45 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 08:44:44 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-
-static int	ft_wordcount(char *str, char c)
+static int		ft_wordcount(char *str, char c)
 {
 	int status;
 	int words;
@@ -38,7 +36,7 @@ static int	ft_wordcount(char *str, char c)
 	return (words);
 }
 
-static int	ft_sp_strlen(char *str, char c)
+static int		ft_sp_strlen(char *str, char c)
 {
 	int len;
 
@@ -51,7 +49,7 @@ static int	ft_sp_strlen(char *str, char c)
 	return (len);
 }
 
-static char	*ft_strndup(char *source, int n)
+static char		*ft_strndup(char *source, int n)
 {
 	char	*res;
 	int		i;
@@ -66,16 +64,16 @@ static char	*ft_strndup(char *source, int n)
 	return (res);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	char	**arr;
-    	char	*iter;
+	char	*iter;
 	char	**dest;
 
 	if (!s)
 		return (NULL);
-	i = ft_wordcount((char * )s, c);
+	i = ft_wordcount((char *)s, c);
 	arr = malloc((i + 1) * sizeof(char*));
 	if (arr == NULL)
 		return (NULL);
@@ -90,4 +88,4 @@ char		**ft_strsplit(char const *s, char c)
 	}
 	*dest = 0;
 	return (arr);
-}	
+}

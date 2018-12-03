@@ -6,13 +6,13 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 18:00:12 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/24 19:39:42 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 07:29:12 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	char *cpydst;
 

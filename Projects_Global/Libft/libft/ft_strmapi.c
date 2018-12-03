@@ -6,7 +6,7 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 07:49:23 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 07:51:17 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 08:38:38 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	j = 0;
 	while (*s)
-			arr[j++] = f(i++,*s++);
+		arr[j++] = f(i++, *s++);
 	return (arr);
 }

@@ -6,7 +6,7 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 06:08:13 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 07:52:14 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 08:37:57 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	size_t		j;
-	char	*arr;
+	char		*arr;
 
 	if (!s)
 		if (!f)

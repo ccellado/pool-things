@@ -6,13 +6,13 @@
 /*   By: ccellado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 17:53:32 by ccellado          #+#    #+#             */
-/*   Updated: 2018/11/26 04:02:45 by ccellado         ###   ########.fr       */
+/*   Updated: 2018/12/03 07:26:40 by ccellado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	unsigned char *c1;
 	unsigned char *c2;
